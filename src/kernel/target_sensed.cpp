@@ -1,7 +1,9 @@
 #ifndef HAS_TARGET_SENSED_INCLUSION
     #define HAS_TARGET_SENSED_INCLUSION
     #ifdef WANT_FLAG_REPORTS
-        #warning SOURCE_target_sensed.cpp BEGINS
+        #warning SOURCE_target_sensed.cpp BEGINS  ENTIRELY OPTIONAL FLAG REPORTS for ainsuForth compile process.
+// you can turn all these off very easily.  Just #undef WANT_FLAG_REPORTS
+        #warning NONE OF THESE WARNINGS are real.  They are forced basically for fun. Ignore them if they are confusing, or turn them off in this file.
 
         #ifdef QSPI_FLASHROM_PRESENT
             #warning WFLAG: QSPI_FLASHROM_PRESENT  is defined
