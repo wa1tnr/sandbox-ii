@@ -112,6 +112,21 @@ LIBRARIES
    and the QSPI libs (two libs and a board support package)
    (as I'm calling it; don't know the correct name for it).
 
+   GOOD UPLOAD.  Mon Aug 26 02:47:15 UTC 2019
+
+   bossac was located for version 1.7.0, manually, and the
+   required command line for it was obtained from the
+   lower window of the Arduino IDE (this was enabled in
+   preferences).
+
+   The Forth ran, wrote and read to SPI flashrom, on the
+   target board: Adafruit Feather M0 Express (not the M4!)
+
+   This is as of August 26, 02:49 UTC, and wrt the repository
+   held in sandbox-ii on github.
+
+   It's a good test of the basics.
+
 
 SEE ALSO
 
@@ -122,4 +137,28 @@ SEE ALSO
    Adafruit NeoMatrix ZeroDMA
    Adafruit NeoPixel library
 
+   bossac appears to be an issue.
+
+   Feather M0 Express, bossac work-around:
+
+   bossac -i -d --port=ttyACM0 -U true -i -e -w -v /tmp/arduino_build_123456/ainsuForth-gen-exp-m4.ino.bin -R
+   Will do the job; but you have to find 1.7.0 version of bossac
+   (which may or may not be present).
+
+   The Adafruit SAMD board support package may be pointing
+   elsewhere (to a different bossac version).
+
+   ItsyBitsyM4 Express, bossac work-around:
+
+   Similarly, the Arduino IDE points to this copy (and version)
+   of bossac:
+
+     ./bossac/1.8.0-48-gb176eee/bossac -i -d --port=ttyACM0 -U -i --offset=0x4000 -e -w -v /tmp/arduino_build_123456/ainsuForth-gen-exp-m4.ino.bin -R
+
+   Note the important 0x4000 offset!  Do not omit it!
+
+   Not sure why the path to bossac (for each of the two kinds
+   of targets, M0 (SAMD21) and M4 (SAMD51) is not found by the
+   Arduino IDE.  Obvious suspect is rollback of adafruit's SAMD
+   board support.
 
