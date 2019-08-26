@@ -23,7 +23,7 @@
                 #include <Adafruit_SPIFlash.h> // NEW LINE 68
 
                 // done below but could go here as well // File thisFile;
-                #include "../common.h"
+                // #include "../common.h"
 
 #if defined(__SAMD51__) || defined(NRF52840_XXAA)
   Adafruit_FlashTransport_QSPI flashTransport(PIN_QSPI_SCK, PIN_QSPI_CS, PIN_QSPI_IO0, PIN_QSPI_IO1, PIN_QSPI_IO2, PIN_QSPI_IO3);
