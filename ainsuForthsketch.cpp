@@ -1,3 +1,17 @@
+// Mon Aug 26 05:49:50 UTC 2019
+
+/*
+  testing-jj-
+  testing-jj-borked-aa-
+  testing-jj-borked-bb-
+* testing-jj-borked-cc-  CURRENT BRANCH
+
+testing-jj-borked-cc- was a checkout -b from testing-jj-borked-bb-
+
+and is a pretty good bugfix, minus the niceties.
+
+*/
+
 // Wed May 29 20:34:39 UTC 2019
 // 4737-a3c-00k- // ainsuForth-gen-exp-m4
 
