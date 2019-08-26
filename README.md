@@ -15,6 +15,18 @@ place to look for porting issues, across targets).
 This forth is compiled regularly (as targets are reused
 to test other code).  It is usually operational. ;)
 
+# New 26 Aug 2019:
+
+On branch testing-jj-borked-aa- which aims to be broken
+when compiled against current (or at least, newer) libraries,
+initially.
+
+The plan is (of course) to make it all nice and shiny,
+but the first step is to reintroduce the problems, and
+that happens (first) here in this branch (testing-jj-borked-aa-)
+
+Existing branch testing-jj- compiles cleanly, with rolled back libs.
+
 # New 05 Aug 2019:
 
 On branch develop / testing-gg- / master
